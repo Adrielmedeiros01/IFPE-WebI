@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +20,35 @@
         background-color: rgb(2, 2, 39);
         height: 7rem;
         position: fixed;
-        width: 100%;  
+        width: 100%;
     }
     #barra_sup h1 {
         padding: 1rem;
         color: white;
         text-align: center;
     }
-    #cabecalho { 
+    #menu {
+        background-color: red;
+    }
+    #list_nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+    #list_nav li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        display: block;
+    }
+    #list_nav li a:hover {
+        background-color: darkred;
+        border-radius: 5px;
+    }
+    #cabecalho {
         padding: 3rem;
         text-align: center;
     }
@@ -37,6 +59,7 @@
     #conteudo {
         padding: 3rem;
     }
+
     #conteudo li, ul, b {
         color: black;
     }
@@ -46,45 +69,62 @@
     #escreva_aqui {
         margin-left: 1rem;
     }
-    #escreva_aqui h3{
+
+    #escreva_aqui h3 {
         /* color: #4b2e2e; */
         /* color: #8b0000; */
     }
+
     #area_escreva {
         background-image: url("1755885668610.png");
         border: 1px solid black;
         padding: 2rem;
     }
-    #area_escreva h3, li{
+
+    #area_escreva h3,
+    li {
         /* color: #4b2e2e; */
     }
+
     #cardapio {
         background-color: rgb(250, 223, 187);
         padding: 1rem;
     }
-    #cardapio li{
+
+    #cardapio li {
         color: black;
     }
-    #cardapio b{
+
+    #cardapio b {
         color: #8b0000;
     }
+
     #cardapio h5 {
         color: black;
     }
+
     #lad_left {
         margin-top: 2rem;
         text-align: center;
     }
+
     footer {
         text-align: center;
         padding: 3rem;
     }
 </style>
+
 <body>
     <section id="barra_sup">
-        <h1>IFPE - LICENCIATURA EM COMPUTAÇÃO</h1>  
-        <div style="background-color: red;">
-            <br>
+        <h1>IFPE - LICENCIATURA EM COMPUTAÇÃO</h1>
+        <div id="menu" style="background-color: red;">
+            <ul id="list_nav">
+                <li><a href="#">Aula 1</a></li>
+                <li><a href="#">Aula 2</a></li>
+                <li><a href="#">Aula 3</a></li>
+                <li><a href="#">Aula 4</a></li>
+                <li><a href="#">Aula 5</a></li>
+            </ul>
         </div>
     </section>
     <main id="bg" class="container">
@@ -135,7 +175,8 @@
                     <li><b>Organização de arquivos-Criar pasta:</b> LC3N/menu_restaurante/</li>
                     <li><b>Criar pastas: </b>img, css, js.</li>
                     <li><b>Sobre HTML5 e suas tags e seus atributos.</b></li><br>
-                    <li style="list-style-type: none;" ><img class="container" src="Captura de tela de 2025-08-22 14-45-20.png" alt=""></li><br>
+                    <li style="list-style-type: none;"><img class="container"
+                            src="Captura de tela de 2025-08-22 14-45-20.png" alt=""></li><br>
                     <li><b>
                             < ! DOCTYPE html>
                         </b> Tipo de documento.</li>
@@ -169,7 +210,8 @@
                 <p>Menu_cardárpio: Crie um menu em lista para um restaurante.</p>
                 <div id="area_escreva">
                     <h3>Restaurante Bucho Cheio</h3><br>
-                    <p><b>Olá, seja bem-vindo! Aqui você irá sair de bucho cheio e se deliciar com nossas especialidades.</b>
+                    <p><b>Olá, seja bem-vindo! Aqui você irá sair de bucho cheio e se deliciar com nossas
+                            especialidades.</b>
                     </p>
                     <section id="cardapio">
                         <h5>Pestíscos:</h5>
@@ -292,4 +334,5 @@
         </footer>
     </main>
 </body>
+
 </html>
