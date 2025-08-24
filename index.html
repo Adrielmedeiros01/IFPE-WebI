@@ -9,9 +9,8 @@
         <title>Web I</title>
 </head>
 <style>
-
     a {
-        color: #4CAF50;
+        color: #10a5af;
     }
     body {
         background-color: #0a0a0a;
@@ -19,6 +18,80 @@
     #bg {
         background-color: #0a0a0a;
         padding: 1rem;
+    }
+      #barra_sup {
+        position: fixed;
+        width: 100%;
+        background-color: #0a0a0a;  
+    }
+    #barra_sup h1{
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    #itens {
+        background-color: #1a1a1a;
+        position: fixed;
+        width: 100%;
+        height: 3.2rem; 
+    }
+    #ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-family: monospace;
+    }
+    #ul li a:hover {
+        background-color: #4CAF50;
+        border-radius: 5px;
+        color: #0a0a0a;
+    }
+    #botmenu {
+        color: white;
+        padding: 0.5rem;
+        cursor: pointer;
+        background-color: #1a1a1a;
+        width: 100%;
+        height: 2.5rem;
+    }
+    #ul,
+    .li {
+        list-style-type: none;
+        cursor: pointer;
+    }
+    .li {
+        color: white;
+        text-align: center;
+        margin-right: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+    @media (min-width: 768px) {
+        #botmenu {
+        display: none;
+        }
+        #itens {
+        display: block;
+        }
+        #ul {
+        flex-direction: row;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        #ul {
+        background-color: #1a1a1a;
+        }
+        .li {
+        color: white;
+        }
+
     }
     #cabecalho {
         padding: 3rem;
@@ -80,87 +153,10 @@
         padding: 3rem;
     }
 /*---------------------------------*/
-    #barra_sup {
-        position: fixed;
-        width: 100%;
-        background-color: #0a0a0a;
-    
-    }
-    #barra_sup h1{
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
-    #itens {
-        background-color: #1a1a1a;
-        position: fixed;
-        width: 100%;
-        height: 3.2rem;
-        
-    }
-    #ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-    #ul li a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        font-family: monospace;
-    }
-    #ul li a:hover {
-        background-color: #4CAF50;
-        border-radius: 5px;
-        /* padding: 0.5rem; */
-        color: #0a0a0a;
-    }
-    #botmenu {
-        color: white;
-        padding: 0.5rem;
-        cursor: pointer;
-        background-color: #1a1a1a;
-        width: 100%;
-        height: 2.5rem;
-    }
-    #ul,
-    .li {
-        list-style-type: none;
-        cursor: pointer;
-    }
-    .li {
-        color: white;
-        text-align: center;
-        margin-right: 2rem;
-        padding: 1rem;
-        font-weight: bold;
-    }
-    @media (min-width: 768px) {
-        #botmenu {
-        display: none;
-        }
-        #itens {
-        display: block;
-        }
-        #ul {
-        flex-direction: row;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        #ul {
-        background-color: #1a1a1a;
-        }
-        .li {
-        color: white;
-        }
-
-    }
-  
 </style>
 <body onresize="mudoutamanho">
-    <section id="barra_sup">
+    <!-- título e barra de navegação/menu: -->
+    <header id="barra_sup">
         <h1 style="text-align: center;">IFPE - LICENCIATURA EM COMPUTAÇÃO</h1>
         <i id="botmenu" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
         <div id="itens">
@@ -177,7 +173,7 @@
             <li class="li"><a href="#comentarios">Comentários</a></li>
           </ul>
         </div>
-    </section>
+    </header>
     <script>
         const itens = document.getElementById("itens");
         function clickMenu() {
@@ -198,12 +194,13 @@
         window.onresize = mudoutamanho;
     </script>
     <main id="bg" class="container">
+        <!-- Imagem: WebI -->
         <div style="background-color: #012724e1; border-radius: 10px; margin-top: 10rem; width: 80%; margin-left: 10%;">
             <img class="container" src="web-10-removebg-preview.png" alt="">
         </div>
         <!-- Texto de apresentação: -->
         <div>
-            <p style="font-weight: bold; margin-top: 5rem; text-align: justify; color: white;">Este espaço foi criado para registrar e organizar os conteúdos da disciplina Web 1.0, do curso de Licenciatura em Computação do IFPE. Aqui você vai encontrar materiais de aula, exemplos de código, explicações sobre HTML, CSS e JavaScript, além de exercícios e comentários que ajudam a fixar o aprendizado. O objetivo é servir como um repositório digital para acompanhar a evolução da disciplina e apoiar os estudos.</p>
+            <p style="font-weight: bold; font-family: monospace; margin-top: 5rem; text-align: justify; color: white;">Este espaço foi criado para registrar e organizar os conteúdos da disciplina Web 1.0, do curso de Licenciatura em Computação do IFPE. Aqui você vai encontrar materiais de aula, exemplos de código, explicações sobre HTML, CSS e JavaScript, além de exercícios e comentários que ajudam a fixar o aprendizado. O objetivo é servir como um repositório digital para acompanhar a evolução da disciplina e apoiar os estudos.</p>
         </div>
         <b></b></b><br><br><br><br><br><br><br><br><br><br><br>
         <!-- Cabeçalho: -->
