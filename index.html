@@ -5,36 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-        <title>Web I</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Web I</title>
 </head>
 <style>
     a {
         color: #10a5af;
     }
+
     body {
         background-color: #0a0a0a;
     }
+
     #bg {
         background-color: #0a0a0a;
         padding: 1rem;
     }
-      #barra_sup {
+
+    #barra_sup {
         position: fixed;
         width: 100%;
-        background-color: #0a0a0a;  
+        background-color: #0a0a0a;
     }
-    #barra_sup h1{
+
+    #barra_sup h1 {
         color: white;
         padding: 10px;
         text-align: center;
     }
+
     #itens {
         background-color: #1a1a1a;
         position: fixed;
         width: 100%;
-        height: 3.2rem; 
+        height: 3.2rem;
     }
+
     #ul {
         list-style: none;
         display: flex;
@@ -42,17 +48,20 @@
         overflow-x: auto;
         overflow-y: hidden;
     }
+
     #ul li a {
         color: white;
         text-decoration: none;
         display: block;
         font-family: monospace;
     }
+
     #ul li a:hover {
         background-color: #4CAF50;
         border-radius: 5px;
         color: #0a0a0a;
     }
+
     #botmenu {
         color: white;
         padding: 0.5rem;
@@ -61,11 +70,13 @@
         width: 100%;
         height: 2.5rem;
     }
+
     #ul,
     .li {
         list-style-type: none;
         cursor: pointer;
     }
+
     .li {
         color: white;
         text-align: center;
@@ -73,86 +84,109 @@
         padding: 1rem;
         font-weight: bold;
     }
+
     @media (min-width: 768px) {
         #botmenu {
-        display: none;
+            display: none;
         }
+
         #itens {
-        display: block;
+            display: block;
         }
+
         #ul {
-        flex-direction: row;
+            flex-direction: row;
         }
     }
+
     @media screen and (max-width: 768px) {
         #ul {
-        background-color: #1a1a1a;
+            background-color: #1a1a1a;
         }
+
         .li {
-        color: white;
+            color: white;
         }
 
     }
+
     #cabecalho {
         padding: 3rem;
         text-align: center;
     }
+
     #cabecalho h1 {
         color: white;
         font-size: 7rem;
     }
+
     @media screen and (max-width: 490px) {
-      #cabecalho h1{
-        font-size: 3rem;
+        #cabecalho h1 {
+            font-size: 3rem;
+        }
     }
-    }
+
     #conteudo {
         padding: 3rem;
     }
-    #conteudo li, ul, b {
+
+    #conteudo li,
+    ul,
+    b {
         color: white;
     }
-    #conteudd h1{
+
+    #conteudd h1 {
         color: white;
     }
+
     .resumo_pratica {
         color: #4CAF50;
     }
+
     #pratica {
         padding: 3rem;
     }
+
     #escreva_aqui {
         margin-left: 1rem;
     }
-    #escreva_aqui p{
+
+    #escreva_aqui p {
         color: white;
     }
+
     #area_escreva {
         background-image: url("1755885668610.png");
         border: 1px solid black;
         padding: 2rem;
     }
+
     #area_escreva b {
         color: black;
     }
+
     #cardapio {
         background-color: rgb(250, 223, 187);
         padding: 1rem;
     }
+
     #cardapio li {
         color: black;
     }
+
     #cardapio b {
         color: #8b0000;
     }
+
     #cardapio h5 {
         color: black;
     }
+
     footer {
         text-align: center;
         padding: 3rem;
     }
-/*---------------------------------*/
 </style>
 <body onresize="mudoutamanho">
     <!-- título e barra de navegação/menu: -->
@@ -160,56 +194,55 @@
         <h1 style="text-align: center;">IFPE - LICENCIATURA EM COMPUTAÇÃO</h1>
         <i id="botmenu" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
         <div id="itens">
-          <ul id="ul"> 
-            <li class="li"><a href="">Início</a></li>
-            <!-- <li class="li"><a href="#aula1">Aula1</a></li>
-            <li class="li"><a href="#aula2">Aula2</a></li>
-            <li class="li"><a href="#aula3">Aula3</a></li>
-            <li class="li"><a href="#aula4">Aula4</a></li>
-            <li class="li"><a href="#aula5">Aula5</a></li> -->
-            <li class="li"><a href="https://www.w3schools.com/html/">HTML</a></li>
-            <li class="li"><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
-            <li class="li"><a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
-            <li class="li"><a href="#comentarios">Comentários</a></li>
-          </ul>
+            <ul id="ul">
+                <li class="li"><a href="">Início</a></li>
+                <li class="li"><a href="https://www.w3schools.com/html/">HTML</a></li>
+                <li class="li"><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                <li class="li"><a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
+                <li class="li"><a href="#comentarios">Comentários</a></li>
+            </ul>
         </div>
     </header>
     <script>
         const itens = document.getElementById("itens");
         function clickMenu() {
-          if (itens.style.display === "block") {
-            itens.style.display = "none";
-          } else {
-            itens.style.display = "block";
-          }
+            if (itens.style.display === "block") {
+                itens.style.display = "none";
+            } else {
+                itens.style.display = "block";
+            }
         }
         function mudoutamanho() {
-          if (window.innerWidth >= 768) {
-            itens.style.display = "block";
-          } else {
-            itens.style.display = "none";
-          }
+            if (window.innerWidth >= 768) {
+                itens.style.display = "block";
+            } else {
+                itens.style.display = "none";
+            }
         }
         window.onload = mudoutamanho;
         window.onresize = mudoutamanho;
     </script>
     <main id="bg" class="container">
         <!-- Imagem: WebI -->
-        <div style="background-color: #012724e1; border-radius: 10px; margin-top: 10rem; width: 80%; margin-left: 10%;">
+        <section style="background-color: #012724e1; border-radius: 10px; margin-top: 10rem; width: 80%; margin-left: 10%;">
             <img class="container" src="web-10-removebg-preview.png" alt="">
-        </div>
-        <!-- Texto de apresentação: -->
-        <div>
-            <p style="font-weight: bold; font-family: monospace; margin-top: 5rem; text-align: justify; color: white;">Este espaço foi criado para registrar e organizar os conteúdos da disciplina Web 1.0, do curso de Licenciatura em Computação do IFPE. Aqui você vai encontrar materiais de aula, exemplos de código, explicações sobre HTML, CSS e JavaScript, além de exercícios e comentários que ajudam a fixar o aprendizado. O objetivo é servir como um repositório digital para acompanhar a evolução da disciplina e apoiar os estudos.</p>
-        </div>
-        <b></b></b><br><br><br><br><br><br><br><br><br><br><br>
-        <!-- Cabeçalho: -->
-        <div id="aula1"></div>
-        <section class="container" id="cabecalho">
-            <h1>Aula 1</h1>
         </section>
+        <!-- Texto de apresentação: -->
+        <section>
+            <p style="font-weight: bold; font-family: monospace; margin-top: 5rem; text-align: justify; color: white;">
+                Este espaço foi criado para registrar e organizar os conteúdos da disciplina Web 1.0, do curso de
+                Licenciatura em Computação do IFPE. Aqui você vai encontrar materiais de aula, exemplos de código,
+                explicações sobre HTML, CSS e JavaScript, além de exercícios e comentários que ajudam a fixar o
+                aprendizado. O objetivo é servir como um repositório digital para acompanhar a evolução da disciplina e
+                apoiar os estudos.</p>
+        </section>
+        <b></b></b><br><br><br><br><br><br><br><br><br><br><br>
         <!-- Aula 01: -->
         <section class="container">
+            <!-- Cabeçalho: -->
+            <div class="container" id="cabecalho">
+            <h1>Aula 1</h1>
+            </div>
             <!-- Resumo: -->
             <div id="conteudo">
                 <h1 class="resumo_pratica">RESUMO:</h1><br>
@@ -270,7 +303,9 @@
                             < meta name="viewport" content="width=device-width, initial-scale=1.0">
                         </b> Está tag garante a responsividade do site.</li>
 
-                    <li><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.w3schools.com/html/html_intro.asp&ved=2ahUKEwjyre_jhKCPAxW3FLkGHezaM3wQFnoECB4QAQ&usg=AOvVaw1jMa38mQ92pheUIrpFWljx">Clique para acessar a documentação HTML.</a></li>
+                    <li><a
+                            href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.w3schools.com/html/html_intro.asp&ved=2ahUKEwjyre_jhKCPAxW3FLkGHezaM3wQFnoECB4QAQ&usg=AOvVaw1jMa38mQ92pheUIrpFWljx">Clique
+                            para acessar a documentação HTML.</a></li>
                 </ul>
             </div>
         </section>
@@ -282,8 +317,9 @@
                 <p>Menu_cardárpio: Crie um menu em lista para um restaurante.</p>
                 <div id="area_escreva">
                     <h3>Restaurante Bucho Cheio</h3><br>
-                    <p><b>Olá, seja bem-vindo! Aqui você irá sair de bucho cheio e se deliciar com nossas especialidades.
-                    </b></p>
+                    <p><b>Olá, seja bem-vindo! Aqui você irá sair de bucho cheio e se deliciar com nossas
+                            especialidades.
+                        </b></p>
                     <section id="cardapio">
                         <h5>Pestíscos:</h5>
                         <ul>
@@ -301,15 +337,45 @@
                             <li><b>Vinho:</b> R$ 25,00.</li>
                         </ul>
                     </section>
+                    <button style="text-align: center;" class="container" onclick="mostrar_cardapio()">Click para exibir código do
+                        Cardápio.</button>
                 </div>
             </div>
-            <br>
-            <a class="container"
-                href="https://www-w3schools-com.translate.goog/html/html_lists.asp?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc">Para
-                mais informações sobre LISTAS clique AQUI!</a>
+            <br><br>
+            <!-- Código do cardápio: -->
+            <div>
+                <div class="container" id="cod_card" style="display: none;">
+                    <pre style="color:#4CAF50">
+< ul>
+    < li>< b>Tabua de frios:< /b> R$ 15,00.< /li>
+    < li>< b>Figado Acebolado:< /b> R$ 35,00.< li>
+    < li>< b>Batata Frita:< /b> R$ 10,00.< /li>
+< /ul>
+< h5>Pratos Principais:</ h5>
+< ul>
+    < li>< b>Strogonoff: < /b>R$ 40,00.< /li>
+< /ul>
+< h5>Bebidas:< /h5>
+< ul>
+    < li>< b>Refrigerente:</b> R$ 5,00.< /li>
+    < li>< b>Vinho:</b> R$ 25,00.< /li>
+< /ul>
+
+<a href="https://www-w3schools-com.translate.goog/html/html_lists.asp?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc">Para saber mais sobre LISTAS clique aqui.</a>
+                    </pre>
+                    <button id="text_teste" style="color: red;" onclick="esconder()">Esconder script</button>
+                </div>
+                <script>
+                    function mostrar_cardapio() {
+                        document.getElementById("cod_card").style.display = "block";
+                    }
+                    function esconder() {
+                        document.getElementById("cod_card").style.display = "none";
+                    }
+                </script>
+            </div>
         </section>
         <!-- Aula 02: -->
-        <div id="aula2"></div>
         <section class="container">
             <div id="cabecalho">
                 <h1>Aula 2</h1>
@@ -332,7 +398,6 @@
                 <p>Escreva aqui...</p>
         </section>
         <!-- Aula 03: -->
-        <div id="aula3"></div>
         <section class="container">
             <div id="cabecalho">
                 <h1>Aula 3</h1>
@@ -355,10 +420,9 @@
                 <p>Escreva aqui...</p>
         </section>
         <!-- Aula 04: -->
-         <div id="aula4"></div>
         <section class="container">
             <div id="cabecalho">
-                <h1>Web I - Aula 4</h1>
+                <h1>Aula 4</h1>
             </div>
             <div id="conteudo">
                 <h1 class="resumo_pratica">RESUMO:</h1><br>
@@ -378,9 +442,9 @@
                 <p>Escreva aqui...</p>
         </section>
         <!-- Aula 05: -->
-        <section id="aula5" class="container">
+        <section class="container">
             <div id="cabecalho">
-                <h1>Web I - Aula 5</h1>
+                <h1>Aula 5</h1>
             </div>
             <div id="conteudo">
                 <h1 class="resumo_pratica">RESUMO:</h1><br>
@@ -407,7 +471,7 @@
                 <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
                 <script>commentBox('5728090902757376-proj')</script>
             </section>
-            <br><br><br> 
+            <br><br><br>
             <p><b>copy</b></p>
         </footer>
     </main>
