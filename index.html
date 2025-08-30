@@ -3,192 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Web I</title>
 </head>
-<style>
-    a {
-        color: #10a5af;
-    }
-
-    body {
-        background-color: #0a0a0a;
-    }
-
-    #bg {
-        background-color: #0a0a0a;
-        padding: 1rem;
-    }
-
-    #barra_sup {
-        position: fixed;
-        width: 100%;
-        background-color: #0a0a0a;
-    }
-
-    #barra_sup h1 {
-        color: white;
-        padding: 10px;
-        text-align: center;
-    }
-
-    #itens {
-        background-color: #1a1a1a;
-        position: fixed;
-        width: 100%;
-        height: 3.2rem;
-    }
-
-    #ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        overflow-x: auto;
-        overflow-y: hidden;
-    }
-
-    #ul li a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        font-family: monospace;
-    }
-
-    #ul li a:hover {
-        background-color: #4CAF50;
-        border-radius: 5px;
-        color: #0a0a0a;
-    }
-
-    #botmenu {
-        color: white;
-        padding: 0.5rem;
-        cursor: pointer;
-        background-color: #1a1a1a;
-        width: 100%;
-        height: 2.5rem;
-    }
-
-    #ul,
-    .li {
-        list-style-type: none;
-        cursor: pointer;
-    }
-
-    .li {
-        color: white;
-        text-align: center;
-        margin-right: 2rem;
-        padding: 1rem;
-        font-weight: bold;
-    }
-
-    @media (min-width: 768px) {
-        #botmenu {
-            display: none;
-        }
-
-        #itens {
-            display: block;
-        }
-
-        #ul {
-            flex-direction: row;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        #ul {
-            background-color: #1a1a1a;
-        }
-
-        .li {
-            color: white;
-        }
-
-    }
-
-    #cabecalho {
-        padding: 3rem;
-        text-align: center;
-    }
-
-    #cabecalho h1 {
-        color: white;
-        font-size: 7rem;
-    }
-
-    @media screen and (max-width: 490px) {
-        #cabecalho h1 {
-            font-size: 3rem;
-        }
-    }
-
-    #conteudo {
-        padding: 3rem;
-    }
-
-    #conteudo li,
-    ul,
-    b {
-        color: white;
-    }
-
-    #conteudd h1 {
-        color: white;
-    }
-
-    .resumo_pratica {
-        color: #4CAF50;
-    }
-
-    #pratica {
-        padding: 3rem;
-    }
-
-    #escreva_aqui {
-        margin-left: 1rem;
-    }
-
-    #escreva_aqui p {
-        color: white;
-    }
-
-    #area_escreva {
-        background-image: url("1755885668610.png");
-        border: 1px solid black;
-        padding: 2rem;
-    }
-
-    #area_escreva b {
-        color: black;
-    }
-
-    #cardapio {
-        background-color: rgb(250, 223, 187);
-        padding: 1rem;
-    }
-
-    #cardapio li {
-        color: black;
-    }
-
-    #cardapio b {
-        color: #8b0000;
-    }
-
-    #cardapio h5 {
-        color: black;
-    }
-
-    footer {
-        text-align: center;
-        padding: 3rem;
-    }
-</style>
-<body onresize="mudoutamanho">
+<body style="background-color: black;" onresize="mudoutamanho">
     <!-- título e barra de navegação/menu: -->
     <header id="barra_sup">
         <h1 style="text-align: center;">IFPE - LICENCIATURA EM COMPUTAÇÃO</h1>
@@ -202,8 +23,7 @@
                 <li class="li"><a href="#comentarios">Comentários</a></li>
             </ul>
         </div>
-    </header>
-    <script>
+        <script>
         const itens = document.getElementById("itens");
         function clickMenu() {
             if (itens.style.display === "block") {
@@ -221,7 +41,9 @@
         }
         window.onload = mudoutamanho;
         window.onresize = mudoutamanho;
-    </script>
+        </script>
+    </header>
+    
     <main id="bg" class="container">
         <!-- Imagem: WebI -->
         <section style="background-color: #012724e1; border-radius: 10px; margin-top: 10rem; width: 80%; margin-left: 10%;">
@@ -395,9 +217,6 @@
                     <li>Revisão dos conceitos da aula passada.</li>
                 </ul>
             </div>
-            <div>
-                <p></p>
-            </div>
         </section>
         <!-- Prática aula02: -->
         <section class="container" id="pratica">
@@ -415,7 +234,7 @@
                                 <h3>Nome:</h3>
                                 <p>Descrição:</p>
                                 <p>Preço: </p>
-                                <img src="https://th.bing.com/th/id/OIP.5L4DAxR2ZDWbE9HhuB1sJQHaEK?w=326&h=183&c=7&r=0&o=7&pid=1.7&rm=3" alt="Imagem">
+                                <img id="img-macaxeira" src="https://th.bing.com/th/id/OIP.5L4DAxR2ZDWbE9HhuB1sJQHaEK?w=326&h=183&c=7&r=0&o=7&pid=1.7&rm=3" alt="Imagem">
                             </article>
                             <br>
                             <article>
@@ -487,89 +306,111 @@
                     </li>
                 </ul>
             </div>
-            <div>
-                <p></p>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            </div>
         </section>
         <!-- Prática aula03: -->
         <section class="container" id="pratica">
             <h1 class="resumo_pratica">Prática:</h1><br>
             <div id="escreva_aqui">
-                <p>Escreva aqui...</p>
+                <p>Meu currículo:</p>
                 <section style="background-color: white; padding: 1rem;">
                     <header>
-                        <div class="row">
-                            <div style="padding: 1rem;" class="col-md-">
+                        <div style="margin-left: 1.5rem;" class="row">
+                            <div style="padding: 1rem;" class="col-md-7">
                                 <h1 style="margin-top: 6rem;" >Adriel Medeiros de Araújo</h1>
                             </div>
-                            <div class="col-md-5">
-                                <img style="margin-top: 1rem;" src="baixados.webp" alt="Imagem">
+                            <div class="col-md-1">
+                                <img style="margin-top: 2rem;" src="baixados.webp" alt="Imagem">
                             </div>
                         </div>
                         <br><br><br>
-                        <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure praesentium repellat doloremque ducimus totam! Fugit similique eos ex nisi vero nobis. Repudiandae harum quidem officia magni maxime, laboriosam vero mollitia?</p>
+                        <p style="color: black;">Natural da cidade de xxx e tem xx anos de idade. Adora fazer xxxxx e é apaixonado por xxx, sua principal qualidade é xxxx. Gosta de música boa e aproveitar os bons momentos</p>
                     </header>
                     <main>
 
                         <section style="border: solid 1px; padding:1rem;">
-                           
-                                <div style="border: solid 1px; padding:2rem">
+
+                            <div class="row">
+                                <!-- Fomarção academica -->
+                                <div class="col-md-6" style="border: solid 1px; padding:2rem">
                                     <h2>Formação Acadêmica:</h2><br>
 
-                                    <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis pariatur alias perferendis voluptatum, sed quis quasi et maiores porro iure itaque expedita sequi numquam sit at ut ab reprehenderit id.</p>
+                                    <!-- <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis pariatur alias
+                                        perferendis voluptatum, sed quis quasi et maiores porro iure itaque expedita sequi numquam sit at ut ab
+                                        reprehenderit id.</p> -->
                                     <ul style="color: black;">
-                                        <li>Técnico em Informática pelo IFPB.</li>
-                                        <li>Licenciatura em Computação pelo IFPE.</li>
-                                        <li>Traços autodidátas.</li>
+                                        <li>Técnico em Informática pelo IFPB - Princesa Isabel.</li>
+                                        <li>Licenciatura em Computação pelo IFPE - Afogados da Ingazeira.</li>
+                                        
                                     </ul>
                                 </div>
-                                <br>
+                                <div class="col-md-6" style="border: solid 1px; padding:2rem">
+                                    <h2>Habilidades e competências:</h2><br>
 
-                                <div style="border: solid 1px; padding:2rem">
-                                    <h2>Projetos:</h2><br>
-
-
-                                    <section>
+                                    <!-- <p style="color: black;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis pariatur alias
+                                        perferendis voluptatum, sed quis quasi et maiores porro iure itaque expedita sequi numquam sit at ut ab
+                                        reprehenderit id.</p> -->
+                                    <ul style="color: black;">
+                                        <li>Inglês básico.</li>
+                                        <li>Informática.</li>
+                                        <li>Desenvolvimento Web.</li>
+                                        <li>Desenvolvimento de Software.</li>
+                                        <li>Automação.</li>
+                                        <li>Banco de dados.</li>
+                                        <li>Monitoria.</li>
+                                        <li>Manutenção e suporte de Hardware.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <br>
+                            <div style="border: solid 1px; padding:2rem">
+                                <h2>Projetos:</h2><br>
+                                <section>
                                         <h2></h2>
                                         <article>
-                                            <h4>Nome: </h4>
-                                            <p>Descrição</p>
-                                            <img src="" alt="Imagem">
-
+                                            <h4>Site:  IFPE-WebI</h4>
+                                            <p style="text-align: justify; color: black;"><b style="color: black;">Descrição:</b> Este espaço foi criado para registrar e organizar os conteúdos da disciplina Web 1.0, do curso de Licenciatura em Computação do IFPE. Aqui você vai encontrar materiais de aula, exemplos de código, explicações sobre HTML, CSS e JavaScript, além de exercícios e comentários que ajudam a fixar o aprendizado. O objetivo é servir como um repositório digital para acompanhar a evolução da disciplina e apoiar os estudos.</p>
+                                            <img width="100%" src="capaSite.png" alt="Imagem">
+                                            
                                         </article>
-                                        <br>
-                                        <article>
-                                            <h4>Nome: </h4>
-                                            <p>Descrição</p>
-                                            <img src="" alt="Imagem">
-
-                                        </article>
-                                        <br>
-                                        <article>
-                                            <h4>Nome: </h4>
-                                            <p>Descrição</p>
-                                            <img src="" alt="Imagem">
-
-                                        </article>
-                                        <br>
+                                        <br><br><br>
                                         
-                                    </section>
+                                        <article>
+                                            <h4>Sistema: Conversor de Moedas básico: </h4>
+                                            <p style="color: black;"><b style="color: black;">Descrição: </b>Software desenvolvido em python utilizando algumas das suas bibliotecas, fazendo requisições e criando uma interface para usuário. O sistema permite o usuário escolher a moeda que deseja converter e para qual que retorne o valor convertido.</p>
+                                            <img width="100%" src="conversorMoedas.png" alt="Imagem">
+                                
+                                        </article>
+                                        <br><br><br>
+                                        <!-- <article>
+                                            <h4>Nome: </h4>
+                                            <p>Descrição</p>
+                                            <img src="" alt="Imagem">
+                                
+                                        </article>
+                                        <br><br><br> -->
+                                
+                                </section>
+                            </div>
 
-                                
-                                </div>
-                                
-                    
                         </section>
 
 
                     </main>
                     <br><br>
-                    <footer style=" border: solid 1px;">
-
-                        <b style="color: black;">Telefone:</b><p style="color: black;"> +55 83 996170818</p>
-                        <b style="color: black;">Email:</b><p style="color: black;">adrielmedeirosaraujo@gmail.com</p>
-                
+                    <footer id="rodape" style="font-size: small; border: solid 1px;">
+                        
+                        <pre style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg> <b style="color: black;"> +55 83 996170818</b></pre>
+                        <br>
+                        
+                        <pre style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                        </svg><b style="color: black;"> adrielmedeirosaraujo@gmail.com</b></pre>
                     </footer>
                 </section>
             </div>
