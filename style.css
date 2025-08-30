@@ -1,0 +1,187 @@
+a {
+    color: #10a5af;
+}
+
+body {
+    background-color: #0a0a0a;
+}
+
+#bg {
+    background-color: #0a0a0a;
+    padding: 1rem;
+}
+
+#barra_sup {
+    position: fixed;
+    width: 100%;
+    background-color: #0a0a0a;
+}
+
+#barra_sup h1 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#itens {
+    background-color: #1a1a1a;
+    position: fixed;
+    width: 100%;
+    height: 3.2rem;
+}
+
+#ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-family: monospace;
+}
+
+#ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    color: #0a0a0a;
+}
+
+#botmenu {
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 2.5rem;
+}
+
+#ul,
+.li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.li {
+    color: white;
+    text-align: center;
+    margin-right: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    #botmenu {
+        display: none;
+    }
+
+    #itens {
+        display: block;
+    }
+
+    #ul {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #ul {
+        background-color: #1a1a1a;
+    }
+
+    .li {
+        color: white;
+    }
+
+}
+
+#cabecalho {
+    padding: 3rem;
+    text-align: center;
+}
+
+#cabecalho h1 {
+    color: white;
+    font-size: 7rem;
+}
+
+@media screen and (max-width: 490px) {
+    #cabecalho h1 {
+        font-size: 3rem;
+    }
+}
+
+#conteudo {
+    padding: 3rem;
+}
+
+#conteudo li,
+ul,
+b {
+    color: white;
+}
+
+#conteudd h1 {
+    color: white;
+}
+
+.resumo_pratica {
+    color: #4CAF50;
+}
+
+#pratica {
+    padding: 3rem;
+}
+
+#escreva_aqui {
+    margin-left: 1rem;
+}
+
+#escreva_aqui p {
+    color: white;
+}
+
+#area_escreva {
+    background-image: url("1755885668610.png");
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+#area_escreva b {
+    color: black;
+}
+
+#cardapio {
+    background-color: rgb(250, 223, 187);
+    padding: 1rem;
+}
+
+#cardapio li {
+    color: black;
+}
+
+#cardapio b {
+    color: #8b0000;
+}
+
+#cardapio h5 {
+    color: black;
+}
+
+/* Aula 03 */
+@media screen and (max-width: 500px) {
+
+    #img-macaxeira {
+
+        width: 35%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+}
