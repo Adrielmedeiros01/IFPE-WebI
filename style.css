@@ -158,7 +158,7 @@ b {
 #cardapio {
     background-color: rgb(250, 223, 187);
     padding: 1rem;
-    width: 40%;
+/*     width: 40%; */
 }
 
 #cardapio li {
