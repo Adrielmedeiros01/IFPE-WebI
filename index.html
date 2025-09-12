@@ -14,7 +14,7 @@
     <header id="barra_sup">
         <h1 style="text-align: center;">IFPE - LICENCIATURA EM COMPUTAÇÃO</h1>
         <i id="botmenu" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-        <div id="itens">
+        <nav id="itens">
             <ul id="ul">
                 <li class="li"><a href="">Início</a></li>
                 <li class="li"><a href="https://www.w3schools.com/html/">HTML</a></li>
@@ -22,7 +22,7 @@
                 <li class="li"><a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
                 <li class="li"><a href="#comentarios">Comentários</a></li>
             </ul>
-        </div>
+        </nav>
         <script>
         const itens = document.getElementById("itens");
         function clickMenu() {
@@ -43,7 +43,6 @@
         window.onresize = mudoutamanho;
         </script>
     </header>
-    
     <main id="bg" class="container">
         <!-- Imagem: WebI -->
         <section style="background-color: #012724e1; border-radius: 10px; margin-top: 10rem; width: 80%; margin-left: 10%;">
@@ -158,53 +157,10 @@
                             <li><b>Refrigerente:</b> R$ 5,00.</li>
                             <li><b>Vinho:</b> R$ 25,00.</li>
                         </ul>
-                    </section>
-<!--                     <button style="text-align: center;" class="container" onclick="mostrar_cardapio()">Click para exibir código do
-                        Cardápio.</button> -->
+                    </section>                
                 </div>
             </div>
             <br><br>
-            <!-- Código do cardápio: -->
-<!--             <div>
-                <div class="container" id="cod_card" style="display: none;">
-                    <pre style="color:#4CAF50">
- 
-< p>Menu_cardárpio: Crie um menu em lista para um restaurante.</>
-< div id="area_escreva">
-    < h3>Restaurante Bucho Cheio</><br>
-    < p>< b>Olá, seja bem-vindo! Aqui você irá sair de bucho cheio e se deliciar com nossas especialidades.
-    </></>
-    < section id="cardapio">
-        < h5>Pestíscos:</>
-        < ul>
-            < li>< b>Tabua de frios:</> R$ 15,00.</>
-            < li>< b>Figado Acebolado:</> R$ 35,00.</>
-            < li>< b>Batata Frita:</> R$ 10,00.</>
-        </>
-        < h5>Pratos Principais:</>
-        < ul>
-            < li>< b>Strogonoff: </>R$ 40,00.</>
-        </>
-        < h5>Bebidas:</>
-        < ul>
-            < li>< b>Refrigerente:</> R$ 5,00.</>
-            < li>< b>Vinho:</> R$ 25,00.</></>
-        </>
-< /div>
-
-<a href="https://www-w3schools-com.translate.goog/html/html_lists.asp?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc">Para saber mais sobre LISTAS clique aqui.</a>
-                    </pre>
-                    <button id="text_teste" style="color: red;" onclick="esconder()">Esconder script</button>
-                </div>
-                <script>
-                    function mostrar_cardapio() {
-                        document.getElementById("cod_card").style.display = "block";
-                    }
-                    function esconder() {
-                        document.getElementById("cod_card").style.display = "none";
-                    }
-                </script>
-            </div> -->
         </section>
         <!-- Aula 02: -->
         <section class="container">
@@ -423,19 +379,16 @@
             <div id="conteudo">
                 <h1 class="resumo_pratica">RESUMO:</h1><br>
                 <ul>
-                    <li><b>Escreva aqui...</b></li>
+                    <li><b>Site feito em sala de aula: </b><a href="aula.html">Acesse Aqui!</a></li>
                 </ul>
-            </div>
-            <div>
-                <p></p>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </section>
         <!-- Prática aula04: -->
         <section class="container" id="pratica">
             <h1 class="resumo_pratica">Prática:</h1><br>
             <div id="escreva_aqui">
-                <p>Escreva aqui...</p>
+
+            </div>
         </section>
         <!-- Aula 05: -->
         <section class="container">
