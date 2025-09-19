@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container" style="text-align: center;">
+        <br>
+        <h1>RESERVA</h1>
+    </header>
+    <main class="container">
+        
+        <form style="border: solid 1px; padding: 1rem; border-radius: 1%;" method="post">
+            <div class="row">
+                <div class="col-md-5">
+                <label for="nome"><b>NOME:</b></label>
+                <input required id="nome" type="text" placeholder="digite seu nome..." autofocus>
+                <br><br>
+                <label for="num">TELEFONE:</label>
+                <input required id="num" type="tel" placeholder="digite seu telefone">
+                <br><br>
+                <label for="email">E-MAIL:</label>
+                <input required id="email" type="email" placeholder="digite seu email">
+                <br><br>
+                <label for="quant">QUANTIDADE DE PESSOAS:</label>
+                <input required id="quant" type="number">
+                <br><br>
+                <label for="data">DATA:</label>
+                <input required id="data" type="date">
+                <br><br>
+                <label for="obs">OBS:</label>
+                <textarea spellcheck="true" cols="30" name="" id="obs" placeholder="digite suas observações "></textarea>
+                <br><br>
+                
+                </div>
+                <div style="margin-top: 5rem; margin-left: 1rem;" class="col-md-5">
+                    
+                    <img style="border-radius: 3%;" src="https://th.bing.com/th/id/OIP.S3qdnhRYquqP31qZ2UVsYgHaE8?w=277&h=185&c=7&r=0&o=7&pid=1.7&rm=3" alt="">
+                </div>
+            </div>
+
+            
+           
+            <div style="text-align: center;">
+                <button type="submit" style="border-radius: 10%;" onclick="">Reservar</button>
+            </div>
+            
+        </form>
+    </main>
+
+    <footer style="text-align: center;">
+        <br><br><br>
+        Rodapé
+    </footer>
+    
+</body>
+</html>
