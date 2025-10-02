@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(1, 46, 1);
+        /* margin: 0; */
+    }
+
+    ul,
+    li {
+        display: inline;
+        margin-right: 10px;
+        color: rgb(212, 212, 58);
+        font-weight: bold;
+
+    }
+
+    li:hover {
+        text-shadow: 5px 5px 5px black;
+        cursor: pointer;
+        background-color: red;
+        border-radius: 8px;
+        padding: 10px;
+
+    }
+
+    header {
+        margin-top: 1rem;
+        padding: 1rem;
+        text-align: end;
+        margin-bottom: 5rem;
+    }
+
+    .dir,
+    .esq {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .container {
+        display: flex;
+        width: 80%;
+        margin: 10px auto;
+        padding: 25px;
+        border: solid 2px black;
+        box-shadow: 5px 5px 5px;
+        border-radius: 8px;
+
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    p {
+        color: white;
+        text-align: justify;
+    }
+</style>
+
+<body>
+
+    <header>
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section class="container">
+            <div class="dir">
+                <h1 style="color: aqua;">Conteúdo do lado esquerdo</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloremque alias nisi beatae
+                    dolore aspernatur tempore, rerum voluptatum asperiores error fugiat inventore id veniam consectetur
+                    atque! Excepturi illum velit fugit!</p>
+            </div>
+            <div class="esq">
+                <h1 style="color: orangered;">Conteúdo do lado direito</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nam suscipit eveniet perferendis
+                    commodi et. Maxime nihil voluptas possimus! Optio, aspernatur explicabo. Facere, voluptate deserunt.
+                    Officia accusamus doloribus porro sint.</p>
+
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <p style="color: rgb(212, 212, 58); border: 1px solid; padding: 10px; border-radius: 8px;">Saiba
+                        mais!</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
