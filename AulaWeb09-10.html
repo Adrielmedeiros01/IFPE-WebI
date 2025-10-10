@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        
+
+        body {
+            margin: 0;
+            background: linear-gradient(rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+        }
+        .barranav {
+            
+            margin-top: 0;
+            width: 100%;  
+            display: flex;
+            position: fixed;
+            background-color: #03374b;
+
+        }
+        .barranav ul, li {
+            display: inline;
+            margin-right: 10px;
+            width: 100%;
+            color: #EDDD53;
+            
+        }
+
+        .barranav li {
+            background-color: #11475c;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid black;
+           
+            
+        }
+
+        .barranav li:hover {
+            box-shadow: 5px 5px 10px #EDDD53;    
+        }
+        
+
+        header {
+            width: 100%;
+            border: solid black;
+            background-color: white;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            border: solid black;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 5px 5px 5px rgb(56, 53, 53);
+      
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            border: solid black;
+            padding: 1rem;
+            background-color: white;
+        }
+
+        .duaspartes {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 80% auto;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 10px auto;     
+            margin-top: 3rem;   
+        }
+
+        .esq, .dir {
+            
+            width: 100% ;
+            border: solid black;
+            border-radius: 8px;
+            margin-left: 5px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+
+        @media screen and (max-width: 630px){
+
+            .duaspartes {
+                flex-direction: column;
+            }
+            .esq,.dir {
+                margin-top: 10px;
+            }
+
+
+            
+        }
+
+        .partone {
+            padding: 1rem;
+            margin: 20px auto;
+        }
+
+        .partone article {
+            border: solid ;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        .partone article:hover {
+            box-shadow: 5px 5px 5px #EDDD53;
+        }
+
+        .parttwo {
+
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            border: solid;
+            width: 80% auto;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 10px auto;     
+            margin-top: 3rem;   
+            margin-bottom: 0;
+
+        }
+
+
+    </style>
+
+
+<body>
+    <nav class="barranav">
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+        </ul>
+    </nav>
+    <header>
+        <br><br>
+        
+    </header>
+    <main>
+
+
+        <section class="duaspartes">
+
+            
+            <div class="esq">
+                <h1>Lado esq</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="dir">
+                <h1>Lado dir</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </section>
+
+        <section class="partone">
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+        </section>
+
+        <section class="parttwo">
+
+
+            <h2>Conteúdo</h2>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            
+        </section>
+        <section class="partone">
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+        </section>
+        <section class="duaspartes">
+
+            
+            <div class="esq">
+                <h1>Card 1</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="dir">
+                <h1>Card 2</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="esq">
+                <h1>Card 3</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="dir">
+                <h1>Card 4</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            
+        </section>
+
+        <section class="partone">
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit commodi, sint fuga quos a nobis voluptatibus alias voluptatum quod. Ipsam magnam, perferendis laborum in unde sapiente reiciendis minus. Saepe.</p>
+                <img src="" alt="Imagem">
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>@copy</p>
+    </footer>
+</body>
+</html>
