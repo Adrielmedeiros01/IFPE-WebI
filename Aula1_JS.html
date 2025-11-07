@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1- JavaScript</title>
+    <link rel="stylesheet" href="/Aula0611/Academia/style.css">
+</head>
+
+
+<style>
+
+    header {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    main {
+        padding: 2rem;
+        border: 1px solid;
+        width: 70%;
+        margin: 30% auto;
+        margin-top: 5rem;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px;
+    }
+
+    input {
+        border-radius: 5px;
+    }
+
+</style>
+
+
+<body>
+
+
+    <header>
+        <h1>Fique Fit! Cadastre-se aqui!</h1>
+    </header>
+
+    <main>
+        <!--
+        <div>
+            <p>O seguinte botão contém a função JS que printa a tela e oferece a impressão.</p>
+            <button onclick="window.print()">Print this page</button>
+        </div>
+        -->
+        <form action="">
+
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" type="text">
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input id="email" name="email" type="email">
+            <br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input id="telefone" name="telefone" type="tel">
+            <br><br>
+
+            <label for="">WhatszApp:</label>
+            <input type="radio" name="" id="">
+            <br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input id="endereco" name="endereco" type="text">
+            <br><br>
+        
+            <label for="nascimento">Data Nascimento:</label>
+            <input id="nascimento" name="nascimento" type="date">
+            <br><br>
+
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+
+            <br><br>
+            <label for="peso">Peso Inicial:</label>
+            <input id="peso" name="peso" type="text">
+            <br><br>
+            <label for="altura">Altura:</label>
+            <input id="altura" name="altura" type="text">
+            
+            <br><br><br>
+
+            <button type="button" onclick="PegaDados()">Submeter todos os dados</button>
+            <br><br>
+
+            <div style=" border-radius: 10px; padding: 2rem;" id="divdados">
+                <p style="color: black" id="infor"></p>
+                <p style="display: none; color: green;" id="confir">Cadastro realizado com sucesso!</p>
+            </div>
+
+
+            <script>
+
+                function PegaDados(){
+                    let nome = document.getElementById("nome").value;
+                    let email = document.getElementById("email").value;
+                    let telefone = document.getElementById("telefone").value;
+                    let endereco = document.getElementById("endereco").value;
+                    let nascimento = document.getElementById("nascimento").value;
+                    let sexo = document.getElementById("sexo").value;
+                    let peso = document.getElementById("peso").value;
+                    let altura = document.getElementById("altura").value;
+                    //document.writeln("Nome: " + nome + "<br>");
+                    //document.writeln("Email: " + email + "<br>");
+                    //document.writeln("Telefone: " + telefone + "<br>");
+                    //document.writeln("Endereço: " + endereco + "<br>");
+                    //document.writeln("Nascimento: " + nascimento + "<br>");
+                    //document.writeln("Sexo: " + sexo + "<br>");
+                    //document.writeln("Peso: " + peso + "<br>");
+                    document.getElementById("infor").innerHTML = "Nome: "+ nome + "<br><br>" + "E-mail:  " + email + "<br><br>" + "Telefone:  " + telefone + "<br><br>" + "Endereço:  " + endereco + "<br><br>" + "Sexo:  " + sexo + "<br><br>" + "Peso Inicial:  " + peso + "<br><br>" + "Altura:  "+ altura;
+                    document.getElementById("confir").style.display = "block";
+                    document.getElementById("divdados").style.border = "solid 1px"
+                }
+
+
+            </script>
+
+        </form>
+
+
+
+    </main>
+
+    <footer>
+    </footer>
+    <script >
+
+        // Comandos de saída JS:
+        // alert("Olá mundo!") // pop-up;
+        // document.writeln("Olá mundo!") // + utilizado = escreve no documento html;
+        // console.log("Olá mundo!") // Aparece para o programador no console do navegador;
+
+        // Comandos de entrada de dados:
+        //prompt("Insira a entrada esperada: "); //Exibe uma entrada pop-up no navegador;
+
+        // Variáveis:
+        //let nomeVar = prompt("Digite seu nome:"); // Valor de variáveis não constantes;
+        //const pi = 3.14; // Valores constantes como o PÍ;
+
+        // Concatenando:
+        //document.write("Olá"+" "+"mundo!");
+
+        // tipos de dados:
+        //let idade = 24;
+        //let nome = "Adriel Medeiros";
+        //let verdade = false;
+        //let boleano = 5.8;
+
+        // Tranformar dados:
+        //let numString = "10";
+        //let convnum1 = parseInt(numString);
+        //let convnum2 = parseFloat(numString);
+        //let peso = parseFloat(prompt("Digite seu peso:"));
+
+        // Operadores aritmeticos:
+        // % resto da divisão;
+        // / quociente da divisão;
+        // ** Potenciação;
+        // * Multiplicação;
+        // ++ Incremento;
+        // -- Decremento;
+
+
+        //Operadores relacionais:
+        // == Igual;
+        // != Diferente;
+
+        // Operadores Lógicos:
+        // ! não;
+        // && = E = and;
+        // || = OU = OR;
+
+
+
+       // switch(variavel) {
+       //     case "caso1":
+      //          sdh
+      //      default:
+       //         pad
+      //  }
+
+    </script>
+
+
+</body>
+
+</html>
